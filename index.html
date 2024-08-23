@@ -33,11 +33,12 @@
 
 </head>
 
-<body class="font-manrope">
+<body id="rinterio" class="font-manrope">
     <header class="bg-gradient-to-b from-bg-body to-white">
+        <nav class="static top-0">
         <div class="navbar flex justify-between bg-base-100 container lg:mx-auto lg:pt-8 bg-transparent">
 
-            <a class=" text-xl lg:text-2xl font-extrabold cursor-pointer"><i
+            <a href="#rinterio" class=" text-xl lg:text-2xl font-extrabold cursor-pointer"><i
                     class="fa-solid fa-arrow-right bg-lemon p-2 rounded-full -rotate-45 mx-3"></i>Rinterio</a>
             <div class="">
                 <div class="dropdown dropdown-end">
@@ -67,15 +68,16 @@
                     <li class="hover:font-bold"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="hidden lg:flex">
+            <div class="hidden lg:flex cursor-pointer">
                 <a class="bg-white text-xl font-bold mr-5 border-2 rounded-full my-auto"><i
                         class="fa-solid fa-magnifying-glass p-3"></i></a>
                 <a class="bg-white text-xl font-bold mr-5 border-2 rounded-full my-auto"><i
                         class="fa-solid fa-cart-shopping p-3"></i></a>
-                <a class="bg-lime-400 text-xl py-3 px-5 font-bold rounded-full">Book Consult<i
-                        class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-full -rotate-45 mx-3"></i></a>
+                <a href="#booking"><button class="bg-lime-400 text-xl py-3 px-5 font-bold rounded-full">Book Consult<i
+                        class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-full -rotate-45 mx-3"></i></button> </a>
             </div>
         </div>
+    </nav>
         <!-- banner-part -->
 
         <div class="container lg:mx-auto text-center p-5">
@@ -321,6 +323,33 @@
             </div>
             </div>
         </section>
+
+        <section id="booking">
+            <div class="bg-cover h-screen mt-3" style="background-image: url(assets/bg.jpg); height:auto;">
+                <div class="container md:mx-auto text-center px-5 pt-10">
+
+                    <button class="bg-lime-400/[0.4] text-sm lg:text-lg py-1 px-3 lg:py-2 lg:px-4 rounded-full"><i
+                            class="fa-solid fa-arrow-right  text-black mr-2"></i>Let’s Connect</button>
+                    <h2 class="text-2xl  mt-5 lg:text-5xl font-black leading-normal">Let’s Discuss Next Project</h2>
+                    <p class="text-sm mt-5 lg:text-xl text-center mx-auto text-gray-600 w-[80%] lg:w-[60%]">The barn
+                        house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                        wood, sleek metal accents.</p>
+                    <div class=" grid grid-cols-1 space-y-3 lg:grid lg:grid-cols-2 lg:gap-8 mt-8 lg:mt-10 mx-auto lg:w-3/4 ">
+                        <input class="text-xs lg:text-lg p-3 lg:p-5 rounded-full" type="text" name="name" id="name" placeholder="First Name :">
+                        <input class="text-xs lg:text-lg p-3 lg:p-5 rounded-full" type="text" name="name" id="name" placeholder="last Name :">
+                        <input class="text-xs lg:text-lg p-3 lg:p-5 rounded-full" type="tel" name="number" id="phone number"
+                            placeholder="Phone :">
+                        <input class="text-xs lg:text-lg p-3 lg:p-5 rounded-full" type="email" name="email" id="email" placeholder="Your Email :">
+                        <textarea class="text-xs lg:text-lg p-3 lg:p-5 lg:col-span-2  border-none focus:bg-none text-gray-400 rounded-3xl bg-white lg:h-44" name="" id="" cols=""
+                            rows="10" placeholder="write your massage here..."></textarea>
+                    </div>
+                    <button class="bg-lime-400 lg:text-xl mb-10 mt-7 p-2 lg:p-4 font-bold rounded-full lg:mt-10 w-full lg:w-3/4">Send Mail<i
+                            class="fa-solid fa-arrow-right bg-black text-white p-1 lg:p-2 rounded-full -rotate-45 mx-3"></i></button>
+
+
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-slate-900">
         <div class="container md:mx-auto text-center p-10 lg:p-20">
@@ -330,7 +359,7 @@
                 captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
                 metal accents.</p>
             <ul
-                class=" container md:mx-auto lg:flex lg:justify-around text-white lg:text-xl mt-10">
+                class=" container md:mx-auto lg:flex lg:justify-around text-white lg:text-xl mt-10 cursor-pointer">
                 <li class="hover:font-bold"><a>Home</a></li>
                 <li class="hover:font-bold"><a>Services</a></li>
                 <li class="hover:font-bold"><a>Portfolio</a></li>
@@ -338,9 +367,9 @@
                 <li class="hover:font-bold"><a>Contact Us</a></li>
             </ul>
             <div class="mt-20">
-                <a class="bg-lime-400 text-sm lg:text-xl py-2 px-10 lg:py-3 lg:px-5 font-bold rounded-full ">Book
+                <a href="#booking"><button class="bg-lime-400 text-sm  lg:text-xl py-2 px-10 lg:py-3 lg:px-5 font-bold rounded-full ">Book
                     Consult<i
-                        class="fa-solid fa-arrow-right bg-black text-white text-[10px] lg:text-[15px] lg: p-2 rounded-full -rotate-45 ml-3 "></i></a>
+                        class="fa-solid fa-arrow-right bg-black text-white text-[10px] lg:text-[15px] p-2 lg:p-2 rounded-full -rotate-45 ml-3 "></i></button></a>
             </div>
         </div>
         </div>
